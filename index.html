@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CepeshRC: Browser Extensions and Games</title>
+    <meta name="description" content="CepeshRC adds fun extensions and mini-games to your browser — boost productivity, take breaks, and enjoy interactive browsing!">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+    
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="page-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="https://cepeshrc.github.io/" target="_blank" class="header-brand-link">
+                <h3 class="mb-0">CEPESHRC</h3>
+            </a>
+            <nav class="nav nav-masthead">
+                <a id="home-link" class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+                <a id="about-link" class="nav-link fw-bold py-1 px-0" href="#about">About</a>
+                <a id="contact-link" class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="d-flex text-center">
+        <div class="floating-images">
+            <img src="characters/1char128.png" alt="character" class="float-img img-1">
+            <img src="characters/2char128.png" alt="character" class="float-img img-2">
+            <img src="characters/3char128.png" alt="character" class="float-img img-3">
+            <img src="characters/4char128.png" alt="character" class="float-img img-4">
+            <img src="characters/5char128.png" alt="character" class="float-img img-5">
+            <img src="characters/6char128.png" alt="character" class="float-img img-6">
+            <img src="characters/7char128.png" alt="character" class="float-img img-7">
+        </div>
+
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto"></header>
+
+            <main class="px-3">
+                <h1>Your Pixelated Friend.</h1>
+                <p class="lead">Liven up your browser with a cute Tamagotchi-style pet that also works as a visual timer, gently reminding you of the time.</p>
+                <div class="buttons">
+                    <a href="https://chromewebstore.google.com/detail/cepeshgochi-virtual-pet-c/pmheidnkcjonmcjndcgcpfmnbfncolml" target="_blank" class="btn-hover color-7">
+                        <i class="fa-brands fa-chrome btn-icon"></i>
+                        Add to Chrome
+                    </a>
+                    <a href="https://microsoftedge.microsoft.com/addons/detail/gffggindaehcmeldjcimeabipepmcdcf" target="_blank" class="btn-hover color-9">
+                        <i class="fa-brands fa-edge btn-icon"></i>
+                        Add to Edge
+                    </a>
+                </div>
+            </main>
+            
+            <footer class="mt-auto"></footer>
+        </div>
+    </section>
+
+    <section id="about" class="text-bg-light">
+        <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-4">What is CepeshGochi?</h2>
+                    <p class="lead text-muted mt-4">
+                        Cepesh Gochi is not just an extension, but your little digital companion. It lives in your browser, reacts to your actions, changes its mood, and helps you manage time in a playful way.
+                    </p>
+                    <p class="lead text-muted">
+                        You can choose your favorite character from the world of games, anime, and memes to make your browser truly unique.
+                    </p>
+                    <a href="https://chromewebstore.google.com/detail/cepeshgochi-virtual-pet-c/pmheidnkcjonmcjndcgcpfmnbfncolml" target="_blank" class="about-icon-link">
+                        <img src="iconcepeshgochi.png" alt="Cepesh Gochi Icon" style="width: 150px; margin-top: 2rem;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="text-center text-white-50 bg-dark py-3">
+        <p>© 2025 Cepesh Gochi. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactLink = document.getElementById('contact-link');
+            if (contactLink) {
+                contactLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    alert('Our contact email: luciscepesh@gmail.com');
+                });
+            }
+
+            const homeLink = document.getElementById('home-link');
+            const aboutLink = document.getElementById('about-link');
+            const aboutSection = document.getElementById('about');
+
+            function onScroll() {
+                if (!aboutSection || !homeLink || !aboutLink) return;
+                const aboutSectionTop = aboutSection.getBoundingClientRect().top;
+                
+                if (aboutSectionTop <= window.innerHeight / 2) {
+                    aboutLink.classList.add('active');
+                    homeLink.classList.remove('active');
+                } else {
+                    homeLink.classList.add('active');
+                    aboutLink.classList.remove('active');
+                }
+            }
+            window.addEventListener('scroll', onScroll);
+            
+            const heroSection = document.getElementById('hero');
+            if (heroSection) {
+                heroSection.addEventListener("pointermove", (e)=>{
+                    const { currentTarget: el, clientX: x, clientY: y } = e;
+                    const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+                    el.style.setProperty('--posX',  x - l - w/2);
+                    el.style.setProperty('--posY',  y - t - h/2);
+                })
+            }
+        });
+    </script>
+</body>
+</html>
