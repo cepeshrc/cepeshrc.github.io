@@ -1,0 +1,118 @@
+/*
+ * =============================================
+ * Стили для одностраничной страницы персонажа
+ * =============================================
+ */
+
+html, .character-page-body {
+    height: 100%;
+}
+
+.character-page-body {
+    background-color: #1a1a1d;
+    background-image: 
+        radial-gradient(circle at 1px 1px, #4c4c5c 1px, transparent 0);
+    background-size: 25px 25px;
+    overflow: hidden; /* Запрещаем прокрутку */
+}
+
+.character-title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #6253e1, 0 0 30px #6253e1;
+    margin-bottom: 1.5rem;
+}
+
+.character-image-wrapper a {
+    display: inline-block; /* Чтобы подсветка работала */
+}
+
+.character-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    transform: scale(1.15);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    transition: filter 0.4s ease; /* Плавный переход для подсветки */
+    cursor: pointer;
+}
+
+/* ИЗМЕНЕНИЕ: Эффект подсветки при наведении */
+.character-image:hover {
+    filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.4));
+}
+
+.text-white-50 a {
+    color: #A3A1FF;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.text-white-50 a:hover {
+    border-bottom-color: #A3A1FF;
+    color: #fff;
+}
+
+/* ИСПРАВЛЕНИЕ: Стили для кнопки, чтобы текст не переносился */
+.btn-hover {
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+.btn-main-text {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Запрещаем перенос текста */
+}
+.btn-main-text i {
+    margin-right: 0.75rem;
+    font-size: 1.1em;
+}
+.btn-brand-icon {
+    font-size: 1.5em;
+    opacity: 0.7;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+/* НОВОЕ: Стили для модального окна предпросмотра */
+#imagePreviewModal .modal-dialog {
+    max-width: 90vw;
+}
+.preview-image {
+    max-height: 90vh;
+    border-radius: 0.5rem;
+}
+.preview-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+}
+
+
+/* Адаптивность */
+@media (max-width: 991.98px) {
+    .character-page-body {
+        overflow: auto;
+        height: auto;
+    }
+    main {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+    .character-title {
+        font-size: 2.5rem;
+    }
+    .character-image {
+        transform: scale(1);
+    }
+}
