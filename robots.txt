@@ -1,0 +1,6 @@
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap file
+Sitemap: https://cepeshrc.github.io/sitemap.xml
