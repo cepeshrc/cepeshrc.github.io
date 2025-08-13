@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Akralys: Themes & UI Styles for ChatGPT</title>
+    <title>Privacy Policy - Akralys: ChatGPT Themes, UI Tools & PDF Export</title>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
     <style>
         /* --- LOCAL FONT DEFINITIONS --- */
         @font-face {
@@ -90,40 +91,45 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* --- Стили для иконки в заголовке --- */
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px; /* Отступ между иконкой и текстом */
+        }
+
+        h1 i.fa-file-lines {
+            font-size: 0.8em; /* Делаем иконку чуть меньше текста заголовка */
+            color: #6b7280; /* Нейтральный серый цвет */
+            margin-bottom: 4px; /* Небольшая коррекция для выравнивания */
+        }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy for Akralys</h1>
+    <h1><i class="fa-solid fa-file-lines"></i> Privacy Policy for Akralys</h1>
     <p class="meta-info">
-        <strong>Last Updated:</strong> July 27, 2025
+        <strong>Last Updated:</strong> August 13, 2025
     </p>
 
     <h2>1. Our Commitment to Your Privacy</h2>
-    <p>This Privacy Policy describes how the "Akralys: Themes & UI Styles for ChatGPT" browser extension ("we," "our," or "the extension") handles your information. Your privacy is our top priority. The extension is designed to function without collecting or transmitting your data to our servers.</p>
+    <p>This Privacy Policy describes how the "Akralys: Themes & UI Styles for ChatGPT" browser extension ("we," "our," or "the extension") handles your information. Your privacy is our top priority. The core functionality of the extension is designed to work without collecting or transmitting your personal data to our servers.</p>
 
-    <h2>2. Data Handling and User-Provided Information</h2>
-    <p>We believe in transparency. While we do <strong>NOT</strong> collect, view, or transmit any of your Browse data or chat history, the extension allows you to provide information to customize your experience. It's important to understand how this information is handled.</p>
-    <p>The extension allows you to input the following types of data, which may be considered personal depending on what you provide:</p>
+    <h2>2. User-Provided Information and Data Handling</h2>
+    <p>We believe in transparency. The extension allows you to provide certain information to customize your experience. This data is handled as follows:</p>
     <ul>
-        <li><strong>Custom Name:</strong> You can set a custom name for the ChatGPT model display. If you enter your real name, this is personal information.</li>
-        <li><strong>Custom Logo:</strong> You can upload an image file to be used as a logo. This image could be a personal photo.</li>
-        <li><strong>Custom Background:</strong> You can upload an image file or provide a URL for a custom background. This image could be a personal photo.</li>
+        <li><strong>Custom Name, Logo, and Background:</strong> You can provide text or image files to customize the ChatGPT interface. This data is stored <strong>only locally</strong> in your browser's storage and is never sent to us or any third party.</li>
+        <li><strong>Email Address:</strong> When you sign up for a free trial or purchase a VIP plan, you provide your email address to our payment partner, <strong>ExtensionPay</strong>. This email is used solely for managing your account status (trial and subscription) and linking your purchases to you. We do not use this email for marketing purposes.</li>
     </ul>
-    <p><strong>Crucially, all data you provide is stored locally on your device and is never sent to us or any third party.</strong></p>
 
     <h2>3. PDF Export Feature</h2>
     <p>To provide the PDF export functionality, the extension must read the content of your current chat conversation. This entire process occurs <strong>locally within your browser</strong> on your computer.</p>
     <p><strong>At no point is your chat history or the content of the generated PDF ever sent to our servers or any third party.</strong> The generated file is saved directly from your browser to your computer's download folder.</p>
+    
     <h2>4. Local Data Storage Only</h2>
-    <p>To provide a personalized experience, the extension stores all your settings and user-provided data <strong>locally on your device</strong> using your browser's built-in, secure storage API (<code>storage.local</code> and <code>storage.sync</code>). This data is under your control and never leaves your computer to be stored on our servers. This locally stored data includes:</p>
-    <ul>
-        <li>Your chosen theme and custom UI colors.</li>
-        <li>Your user-provided data for branding (Custom Name and Logo).</li>
-        <li>Your custom background settings (color, URL, or uploaded image data).</li>
-        <li>Your layout adjustments (chat width and font size).</li>
-        <li>The enabled/disabled status of the extension.</li>
-    </ul>
+    <p>All your settings and customization data are stored <strong>locally on your device</strong> using your browser's built-in, secure storage API (<code>storage.local</code> and <code>storage.sync</code>). This data is under your control and never leaves your computer to be stored on our servers. This includes themes, colors, branding information, and layout adjustments.</p>
 
     <h2>5. Permissions Explained</h2>
     <p>Akralys requests the minimum permissions necessary for its functionality:</p>
@@ -131,20 +137,28 @@
         <li><strong><code>storage</code>:</strong> Essential to save your settings and custom data locally and securely in your browser.</li>
         <li><strong><code>tabs</code>:</strong> Used to detect when you are on a ChatGPT tab to activate the extension's features.</li>
         <li><strong><code>sidePanel</code>:</strong> Allows the extension to open its user interface in the browser's side panel.</li>
-        <li><strong><code>scripting</code>:</strong> The core permission that allows Akralys to apply visual styles (CSS) and animations (JS) to the ChatGPT webpage.</li>
+        <li><strong><code>scripting</code>:</strong> The core permission that allows Akralys to apply visual styles and features to the ChatGPT webpage.</li>
         <li><strong>Host Permissions (<code>chat.openai.com</code> & <code>chatgpt.com</code>):</strong> Required to grant the <code>scripting</code> permission to modify the appearance of the official ChatGPT websites.</li>
     </ul>
 
-    <h2>6. Data Sharing & Third-Party Services</h2>
-    <p>We do <strong>NOT</strong> share, sell, rent, or transfer any data to third parties. The extension does not integrate with any third-party analytics, advertising, or tracking services.</p>
-    
-    <h2>7. Your Control Over Your Data</h2>
-    <p>You have complete control over your data. You can view, modify, and delete your saved settings at any time within the extension's panel. Uninstalling the extension will remove all of its locally stored data from your browser.</p>
+    <h2>6. Payments, Subscriptions, and Trials</h2>
+    <p>To offer premium features (VIP plans) and free trials, Akralys integrates with third-party services designed for security and reliability.</p>
+    <ul>
+        <li><strong>Account Management:</strong> We use <strong>ExtensionPay</strong> to manage user accounts, subscriptions, and trial periods. When you purchase a plan or start a trial, your account (identified by your email address) is managed through their service.</li>
+        <li><strong>Payment Processing:</strong> All payments are processed securely by <strong>Stripe</strong>, a certified and globally trusted payment processor. We do <strong>NOT</strong> see, handle, or store any of your sensitive payment information, such as credit card numbers. This information is sent directly to Stripe. You can read their privacy policy here: <a href="https://stripe.com/privacy" target="_blank">Stripe Privacy Policy</a>.</li>
+    </ul>
 
-    <h2>8. Changes to This Policy</h2>
+    <h2>7. Data Sharing & Third-Party Services</h2>
+    <p>We do <strong>NOT</strong> sell, rent, or transfer your personal data. We do not integrate with any third-party analytics, advertising, or tracking services.</p>
+    <p>Our only integration with third-party services is for the explicit purpose of managing payments and subscriptions, as detailed in Section 6, through our partners <strong>ExtensionPay</strong> and <strong>Stripe</strong>.</p>
+    
+    <h2>8. Your Control Over Your Data</h2>
+    <p>You have complete control over your data. You can view and modify your locally saved settings at any time within the extension's panel. Uninstalling the extension will remove all of its locally stored data from your browser. To manage your subscription or delete your account data held by ExtensionPay, you can do so through the extension's panel or by contacting us for assistance.</p>
+
+    <h2>9. Changes to This Policy</h2>
     <p>If we make any significant changes to this privacy policy, we will update the "Last Updated" date at the top of this document and provide a notice on the extension's listings in the respective browser stores.</p>
 
-    <h2>9. Contact Information</h2>
+    <h2>10. Contact Information</h2>
     <p>If you have any questions about this privacy policy, you can contact us at: <a href="mailto:luciscepesh@gmail.com">luciscepesh@gmail.com</a>.</p>
     
 </body>
