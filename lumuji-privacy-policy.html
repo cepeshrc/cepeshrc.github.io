@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Lumuji: Shimeji & GIF Custom Browser Pets</title>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <style>
+        /* --- LOCAL FONT DEFINITIONS --- */
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            src: url('assets/fonts/inter/Inter_24pt-Regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            src: url('assets/fonts/inter/Inter_24pt-Bold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            src: url('assets/fonts/inter/Inter_24pt-ExtraBold.ttf') format('truetype');
+        }
+
+        /* --- STYLING --- */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 40px;
+        }
+        h1, h2 {
+            color: #111827;
+            font-weight: 700;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        h2 {
+            font-size: 1.2rem;
+            border-bottom: none;
+        }
+        p, li {
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+        .meta-info {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        ul {
+            padding-left: 25px;
+            list-style: disc;
+        }
+        li {
+            margin-bottom: 10px;
+            padding-left: 0;
+            position: relative;
+        }
+        code {
+            background-color: #f3f4f6;
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            border: 1px solid #e5e7eb;
+        }
+        strong {
+            color: #111827;
+            font-weight: 600;
+        }
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        h1 i.fa-file-lines {
+            font-size: 0.8em;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><i class="fa-solid fa-file-lines"></i> Privacy Policy for Lumuji</h1>
+    <p class="meta-info">
+        <strong>Last Updated:</strong> August 16, 2025
+    </p>
+
+    <h2>1. Our Commitment to Your Privacy</h2>
+    <p>This Privacy Policy describes how the "Lumuji: Shimeji & GIF Custom Browser Pets" browser extension ("we," "our," or "the extension") handles your information. Your privacy is our top priority. The core functionality of the extension is designed to work without collecting or transmitting your personal data to our servers.</p>
+
+    <h2>2. User-Provided Information and Data Handling</h2>
+    <p>We believe in transparency. The extension allows you to provide certain information to customize your experience. This data is handled as follows:</p>
+    <ul>
+        <li><strong>Custom GIFs (Lumujis):</strong> As a VIP feature, you can provide image files or URLs to create custom GIF pets. This data is stored <strong>only locally</strong> in your browser's storage (<code>storage.local</code>) and is never sent to us or any third party.</li>
+        <li><strong>Task Manager Data:</strong> The tasks you create in the extension's Task Manager are stored in your browser's synchronized storage (<code>storage.sync</code>). This allows you to access your tasks across different devices where you are logged into the same browser account, but this data is still not accessible by us.</li>
+        <li><strong>Email Address:</strong> When you sign up for a free trial or purchase a VIP plan, you provide your email address to our payment partner, <strong>ExtensionPay</strong>. This email is used solely for managing your account status (trial and subscription) and linking your purchases to you. We do not use this email for marketing purposes.</li>
+    </ul>
+
+    <h2>3. Local Data Storage Only</h2>
+    <p>All your settings and customization data are stored <strong>locally on your device</strong> using your browser's built-in, secure storage APIs (<code>storage.local</code> and <code>storage.sync</code>). This data is under your control and never leaves your computer to be stored on our servers. This includes your custom GIF library, tasks, and pet settings.</p>
+    <p>Additionally, to improve performance and enable offline functionality, the extension caches character (Shimeji) and standard GIF images from our server in your browser's local cache (<code>Cache API</code>). This cached data is non-personal and is used solely to display the characters on your screen without needing to re-download them.</p>
+
+    <h2>4. Permissions Explained</h2>
+    <p>Lumuji requests the minimum permissions necessary for its functionality:</p>
+    <ul>
+        <li><strong><code>storage</code> & <code>unlimitedStorage</code>:</strong> Essential to save your settings, tasks, and custom GIF library locally and securely in your browser.</li>
+        <li><strong><code>scripting</code>:</strong> The core permission that allows Lumuji to add the pet characters to the webpages you visit.</li>
+        <li><strong><code>webNavigation</code>:</strong> Used to restore your active pets on a webpage after it has been reloaded.</li>
+        <li><strong><code>contextMenus</code>:</strong> Allows you to interact with pets by right-clicking on them.</li>
+        <li><strong><code>alarms</code> & <code>notifications</code>:</strong> Required for the Timer feature to function and to notify you when the time is up.</li>
+        <li><strong>Host Permissions (<code>&lt;all_urls&gt;</code>):</strong> Required to grant the <code>scripting</code> permission to add pets to any website you visit, not just a specific one.</li>
+    </ul>
+
+    <h2>5. Payments, Subscriptions, and Trials</h2>
+    <p>To offer premium features (VIP plans) and free trials, Lumuji integrates with third-party services designed for security and reliability.</p>
+    <ul>
+        <li><strong>Account Management:</strong> We use <strong>ExtensionPay</strong> to manage user accounts, subscriptions, and trial periods. When you purchase a plan or start a trial, your account (identified by your email address) is managed through their service.</li>
+        <li><strong>Payment Processing:</strong> All payments are processed securely by <strong>Stripe</strong>, a certified and globally trusted payment processor. We do <strong>NOT</strong> see, handle, or store any of your sensitive payment information, such as credit card numbers. This information is sent directly to Stripe. You can read their privacy policy here: <a href="https://stripe.com/privacy" target="_blank">Stripe Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>6. Data Sharing & Third-Party Services</h2>
+    <p>We do <strong>NOT</strong> sell, rent, or transfer your personal data. We do not integrate with any third-party analytics, advertising, or tracking services.</p>
+    <p>Our only integration with third-party services is for the explicit purpose of managing payments and subscriptions, as detailed in Section 5, through our partners <strong>ExtensionPay</strong> and <strong>Stripe</strong>.</p>
+    
+    <h2>7. Your Control Over Your Data</h2>
+    <p>You have complete control over your data. You can view and modify your locally saved settings at any time within the extension's panel. Uninstalling the extension will remove all of its locally stored data from your browser. To manage your subscription or delete your account data held by ExtensionPay, you can do so through the extension's panel or by contacting us for assistance.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>If we make any significant changes to this privacy policy, we will update the "Last Updated" date at the top of this document and provide a notice on the extension's listings in the respective browser stores.</p>
+
+    <h2>9. Contact Information</h2>
+    <p>If you have any questions about this privacy policy, you can contact us at: <a href="mailto:luciscepesh@gmail.com">luciscepesh@gmail.com</a>.</p>
+    
+</body>
+</html>
