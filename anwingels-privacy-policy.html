@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Anwingels: Gemini Themes, UI Styles & PDF Export</title>
+    <title>Privacy Policy - Anwingels: Gemini Custom Themes, UI Styles & PDF Export</title>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
         body {
@@ -67,20 +68,34 @@
         a:hover {
             text-decoration: underline;
         }
+        
+        /* ИЗМЕНЕНИЕ: Добавлены стили для иконки в заголовке */
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px; /* Отступ между иконкой и текстом */
+        }
+
+        h1 i.fa-file-lines {
+            font-size: 0.8em; /* Делаем иконку чуть меньше текста заголовка */
+            color: #6b7280; /* Нейтральный серый цвет */
+            margin-bottom: 4px; /* Небольшая коррекция для выравнивания */
+        }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy for Anwingels</h1>
+    <h1><i class="fa-solid fa-file-lines"></i> Privacy Policy for Anwingels</h1>
     <p class="meta-info">
-        <strong>Last Updated:</strong> August 5, 2025
+        <strong>Last Updated:</strong> August 18, 2025
     </p>
 
     <h2>1. Our Commitment to Your Privacy</h2>
-    <p>This Privacy Policy describes how the "Anwingels: Gemini Themes, UI Styles & PDF Export" browser extension ("we," "our," or "the extension") handles your information. Your privacy is our top priority. The extension is designed with a "privacy-first" approach, functioning without collecting or transmitting your sensitive data to our servers.</p>
+    <p>This Privacy Policy describes how the "Anwingels: Gemini Custom Themes, UI Styles & PDF Export" browser extension ("we," "our," or "the extension") handles your information. Your privacy is our top priority. The extension is designed with a "privacy-first" approach, functioning without collecting or transmitting your sensitive data to our servers.</p>
 
     <h2>2. Information We Do NOT Collect</h2>
-    <p>The Anwingels extension is built to be secure and private. We do <strong>NOT</strong> collect, view, store, or transmit any of your personal information, Browse data, chat history, or any user content from your Google Gemini sessions. All operations performed by the extension are done locally on your computer.</p>
+    <p>The Anwingels extension is built to be secure and private. We do <strong>NOT</strong> collect, view, store, or transmit any of your personal information, browsing data, chat history, or any user content from your Google Gemini sessions. All operations performed by the extension are done locally on your computer.</p>
     
     <h2>3. PDF Export Feature</h2>
     <p>To provide the PDF export functionality, the extension must read the content of your current chat conversation on the Google Gemini page. This entire process occurs <strong>locally within your browser</strong> on your computer.</p>
@@ -96,7 +111,16 @@
         <li>The enabled/disabled status of the extension.</li>
     </ul>
 
-    <h2>5. Permissions Explained</h2>
+    <h2>5. Paid Subscriptions & Third-Party Payment Processing</h2>
+    <p>To unlock VIP Features, you must purchase a subscription. We use a secure third-party service, ExtensionPay (which utilizes <a href="https://stripe.com" target="_blank">Stripe</a>), to process payments.</p>
+    <ul>
+        <li>When you choose to purchase a subscription, you will be directed to a secure payment page hosted by our payment processor.</li>
+        <li>We do <strong>NOT</strong> collect, view, or store your sensitive payment information, such as your full credit card number.</li>
+        <li>We only receive non-sensitive information necessary to manage your subscription, such as your email address, the plan you purchased, and your subscription status (e.g., active, canceled). This information is used solely for account management and to provide you with access to VIP Features.</li>
+    </ul>
+    <p>We encourage you to review the privacy policy of our payment processor: <a href="https://stripe.com/privacy" target="_blank">Stripe Privacy Policy</a>.</p>
+
+    <h2>6. Permissions Explained</h2>
     <p>Anwingels requests the minimum permissions necessary for its functionality:</p>
     <ul>
         <li><strong><code>storage</code>:</strong> Essential to save your settings and custom themes locally and securely in your browser.</li>
@@ -106,16 +130,16 @@
         <li><strong>Host Permission (<code>gemini.google.com</code>):</strong> Required to grant the <code>scripting</code> permission to modify the appearance of the official Google Gemini website.</li>
     </ul>
 
-    <h2>6. Data Sharing & Third-Party Services</h2>
-    <p>We do <strong>NOT</strong> share, sell, rent, or transfer any data to third parties. The extension does not integrate with any third-party analytics, advertising, or tracking services.</p>
+    <h2>7. Data Sharing & Third-Party Services</h2>
+    <p>We do not share, sell, rent, or transfer any of your personal data, <strong>with the sole exception of the data required for payment processing as described in Section 5.</strong> The extension does not integrate with any third-party analytics, advertising, or tracking services.</p>
     
-    <h2>7. Your Control Over Your Data</h2>
+    <h2>8. Your Control Over Your Data</h2>
     <p>You have complete control over your data. You can view, modify, and delete your saved settings at any time within the extension's panel. Uninstalling the extension will remove all of its locally stored data from your browser.</p>
 
-    <h2>8. Changes to This Policy</h2>
+    <h2>9. Changes to This Policy</h2>
     <p>If we make any significant changes to this privacy policy, we will update the "Last Updated" date at the top of this document and provide a notice on the extension's listings in the respective browser stores.</p>
 
-    <h2>9. Contact Information</h2>
+    <h2>10. Contact Information</h2>
     <p>If you have any questions about this privacy policy, you can contact us at: <a href="mailto:luciscepesh@gmail.com">luciscepesh@gmail.com</a>.</p>
     
 </body>
