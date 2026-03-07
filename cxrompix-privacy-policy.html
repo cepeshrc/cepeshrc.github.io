@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Cxrompix: Web Image Extractor & Bulk Image Downloader</title>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 40px;
+        }
+        h1, h2 {
+            color: #111827;
+            font-weight: 700;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        h1 i.fa-shield-halved {
+            font-size: 0.8em;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            border-bottom: none;
+        }
+        p, li {
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+        .meta-info {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        ul {
+            padding-left: 25px;
+            list-style: disc;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #f3f4f6;
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            border: 1px solid #e5e7eb;
+        }
+        strong {
+            color: #111827;
+            font-weight: 600;
+        }
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><i class="fa-solid fa-shield-halved"></i> Privacy Policy for Cxrompix</h1>
+    <p class="meta-info">
+        <strong>Last Updated:</strong> March 2026
+    </p>
+
+    <h2>1. Our Commitment to Your Privacy</h2>
+    <p>This Privacy Policy describes how the "Cxrompix: Web Image Extractor & Bulk Image Downloader" browser extension ("we," "our," or "the extension") handles your information. Your privacy is our absolute priority. The extension is engineered with a strict "Client-Side First" architecture, meaning all core extraction and downloading functions operate locally on your device without collecting, tracking, or transmitting your personal browsing data to external servers.</p>
+
+    <h2>2. Information We Do NOT Collect</h2>
+    <p>The Cxrompix extension is built to be secure and private. We do <strong>NOT</strong> collect, view, store, or transmit your personal information, browsing history, website content, or any data you enter into web forms. We do not use hidden analytics trackers or inject advertisements into your browser.</p>
+    
+    <h2>3. Deep Scraping & Media Processing</h2>
+    <p>To provide its core extraction functionality, the extension must programmatically interact with the Document Object Model (DOM) of the web pages you visit. This is necessary for:</p>
+    <ul>
+        <li><strong>Media Detection:</strong> The content scripts scan the page to locate standard HTML elements (e.g., <code>&lt;img&gt;</code>, <code>&lt;picture&gt;</code>) and hidden CSS background images.</li>
+        <li><strong>Batch Packaging:</strong> The extension fetches the discovered media URLs to generate a downloadable ZIP archive directly in your browser's memory.</li>
+    </ul>
+    <p>This entire parsing and packaging process occurs <strong>strictly locally within your browser</strong>. At no point are the URLs of the images you view or download transmitted to our servers.</p>
+
+    <h2>4. Local Data Storage Only</h2>
+    <p>To provide a seamless workflow, the extension stores your custom preferences <strong>locally on your device</strong> using the browser's built-in secure storage API (<code>chrome.storage</code>). This data never leaves your computer and includes:</p>
+    <ul>
+        <li>Your preferred default download formats (e.g., forcing JPG, PNG, or WEBP).</li>
+        <li>Your image resolution filters (minimum width and height criteria).</li>
+        <li>Your UI layout preferences within the Side Panel.</li>
+        <li>Your custom naming templates for ZIP archives and downloaded files.</li>
+    </ul>
+
+    <h2>5. Premium Access & Third-Party Payment Processing</h2>
+    <p>To unlock advanced deep-scraping algorithms and VIP features, users can purchase a premium upgrade. We utilize a verified third-party service, ExtensionPay (which relies on <a href="https://stripe.com" target="_blank">Stripe</a> infrastructure), to process all payments securely.</p>
+    <ul>
+        <li>When purchasing an access tier, you interact directly with secure payment gateways hosted by our processor (<code>extensionpay.com</code>).</li>
+        <li>We do <strong>NOT</strong> collect, view, or store your sensitive financial data (such as full credit card numbers).</li>
+        <li>We only receive a cryptographic token confirming your active subscription status to unlock the premium features within the extension.</li>
+    </ul>
+    <p>We encourage you to review the privacy policy of our payment processor: <a href="https://stripe.com/privacy" target="_blank">Stripe Privacy Policy</a>.</p>
+
+    <h2>6. Transparent Permissions Explanation</h2>
+    <p>Cxrompix requests only the permissions explicitly required for its operation. Here is the technical justification for each:</p>
+    <ul>
+        <li><strong><code>storage</code>:</strong> Essential for saving your format and filter preferences locally so you don't have to re-configure them on every page.</li>
+        <li><strong><code>downloads</code>:</strong> The core API required to physically save individual images or generated ZIP archives to your local hard drive.</li>
+        <li><strong><code>notifications</code>:</strong> Used strictly to provide real-time status updates (e.g., alerting you when a large ZIP archive has finished compiling).</li>
+        <li><strong><code>tabs</code>:</strong> Required temporarily to read the active tab's title, allowing the extension to automatically and intelligently name your downloaded ZIP folder based on the website's name.</li>
+        <li><strong><code>sidePanel</code>:</strong> Enables the persistent extraction interface that stays open while you scroll, preventing the loss of your selected images and filters.</li>
+        <li><strong>Host Permissions (<code>&lt;all_urls&gt;</code> / <code>*://*/*</code>):</strong> Required to bypass strict Cross-Origin Resource Sharing (CORS) policies. Without this, the browser would block the extension from downloading high-resolution images hosted on third-party Content Delivery Networks (CDNs). We do not use this access to track your cross-site history.</li>
+    </ul>
+
+    <h2>7. Data Sharing & Third-Party Services</h2>
+    <p>We do not share, sell, rent, or transfer any of your data. The only exception is the non-sensitive subscription status data required for ExtensionPay to verify premium access (as described in Section 5). The extension contains zero third-party tracking or advertising SDKs.</p>
+    
+    <h2>8. Your Control Over Your Data</h2>
+    <p>You have absolute control over your environment. You can modify or clear your saved settings at any time within the extension's options. Uninstalling Cxrompix from your browser will instantly and permanently wipe all its locally stored configurations from your device.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>If we introduce significant architectural changes that affect how local data is handled, we will update the "Last Updated" date at the top of this document and notify users via the extension's store listing.</p>
+
+    <h2>10. Contact Information</h2>
+    <p>For technical support or privacy-related inquiries, please contact the lead developer at: <a href="mailto:luciscepesh@gmail.com">luciscepesh@gmail.com</a>.</p>
+    
+</body>
+</html>
