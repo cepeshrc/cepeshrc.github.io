@@ -1,15 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://cepeshrc.github.io/</loc>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://cepeshrc.github.io/lumuji/mr-tenna-shimeji.html</loc>
-  <priority>0.80</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+   <url>
+      <loc>https://cepeshrc.github.io/</loc>
+      <lastmod>2026-03-22</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+      <image:image>
+         <image:loc>https://cepeshrc.github.io/og-image.png</image:loc>
+         <image:title>CepeshRC: Browser Extensions &amp; Digital Tools</image:title>
+         <image:caption>Home of advanced digital tools: Cxrompix, Anwingels, Lumuji, and RawVamp dark aesthetic photo editor.</image:caption>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://cepeshrc.github.io/rawvamp/</loc>
+      <lastmod>2026-03-22</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+      <image:image>
+         <image:loc>https://rawvamp.com/assets/img/marketing/darken-image-preview.webp</image:loc>
+         <image:title>Image Darkener: Darken Photo Online Free</image:title>
+         <image:caption>Instantly darken photos online, apply a shadow overlay, and use vintage camera filter AI for Y2K glitches and dark aesthetic edits.</image:caption>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://cepeshrc.github.io/cxrompix/</loc>
+      <lastmod>2026-03-22</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+      <image:image>
+         <image:loc>https://cepeshrc.github.io/cxrompix/download-all-images-page-banner-1400x560.webp</image:loc>
+         <image:title>Cxrompix: Bulk Image Downloader &amp; Web Image Extractor</image:title>
+         <image:caption>Advanced bulk image downloader and picture scraper. Save any gallery as a ZIP archive instantly.</image:caption>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://cepeshrc.github.io/anwingels/</loc>
+      <lastmod>2026-03-22</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+      <image:image>
+         <image:loc>https://cepeshrc.github.io/anwingels/gemini-side-panel-extension.webp</image:loc>
+         <image:title>Anwingels: Custom Themes &amp; Export Gemini Chat to PDF</image:title>
+         <image:caption>Customize Google Gemini with animated themes, dark mode, and seamless tools to export chat to PDF.</image:caption>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://cepeshrc.github.io/lumuji/mr-tenna-shimeji</loc>
+      <lastmod>2026-03-22</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+      <image:image>
+         <image:loc>https://cepeshrc.github.io/lumuji_screen/lumuji_1.png</image:loc>
+         <image:title>Mr. Tenna Shimeji Anime Pet</image:title>
+         <image:caption>Interactive desktop pet and animated companion for your browser.</image:caption>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://cepeshrc.github.io/cxrompix-privacy-policy</loc>
+      <lastmod>2026-03-22</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
+   <url>
+      <loc>https://cepeshrc.github.io/anwingels-privacy-policy.html</loc>
+      <lastmod>2026-03-22</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
 </urlset>
