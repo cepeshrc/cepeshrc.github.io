@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CepeshGochi: Virtual Pet & Focus Timer</title>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 40px;
+        }
+        h1, h2 {
+            color: #111827;
+            font-weight: 700;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        h1 i.fa-shield-halved {
+            font-size: 0.8em;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            border-bottom: none;
+        }
+        p, li {
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+        .meta-info {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        ul {
+            padding-left: 25px;
+            list-style: disc;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #f3f4f6;
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            border: 1px solid #e5e7eb;
+        }
+        strong {
+            color: #111827;
+            font-weight: 600;
+        }
+        a {
+            color: #9c27b0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1><i class="fa-solid fa-shield-halved"></i> Privacy Policy for CepeshGochi</h1>
+    <p class="meta-info">
+        <strong>Last Updated:</strong> March 2026
+    </p>
+
+    <h2>1. Our Commitment to Your Privacy</h2>
+    <p>This Privacy Policy describes how the "CepeshGochi: Virtual Pet & Focus Timer" browser extension ("we," "our," or "the extension") handles your information. Your privacy is our absolute priority. The extension is engineered with a strict "Client-Side First" architecture, meaning all game mechanics, timer calculations, and custom image handling operate entirely locally on your device without transmitting your personal data or browsing habits to external servers.</p>
+
+    <h2>2. Information We Do NOT Collect</h2>
+    <p>CepeshGochi is built to be a secure and private digital companion. We do <strong>NOT</strong> collect, view, store, or transmit your personal information, browsing history, website content, or keystrokes. We do not use hidden analytics trackers or inject advertisements into your browser.</p>
+    
+    <h2>3. Local Data Storage Only</h2>
+    <p>To provide a seamless and persistent Tamagotchi experience, the extension stores your game progress and preferences <strong>locally on your device</strong> using the browser's built-in secure storage API (<code>chrome.storage</code>). This data never leaves your computer and includes:</p>
+    <ul>
+        <li>Your pet's current health (HP/Happiness), XP points, level, and unlocked achievements.</li>
+        <li>Your selected character ID, active background animations, and custom countdown timer values.</li>
+        <li>Custom PNG characters you upload. These images are resized and converted into a local Base64 text string stored securely within your browser. <strong>They are never uploaded to a cloud server.</strong></li>
+        <li>Your UI viewport preference (Popup vs. Side Panel mode).</li>
+    </ul>
+
+    <h2>4. Premium Access & Third-Party Payment Processing</h2>
+    <p>To unlock the Platinum Tier (which includes custom image uploads, unlimited animated backgrounds, and custom timers), users can purchase a premium upgrade. We utilize a verified third-party service, ExtensionPay (which relies on <a href="https://stripe.com" target="_blank">Stripe</a> infrastructure), to process all payments securely.</p>
+    <ul>
+        <li>When purchasing an access tier, you interact directly with secure payment gateways hosted by our processor (<code>extensionpay.com</code>).</li>
+        <li>We do <strong>NOT</strong> collect, view, or store your sensitive financial data (such as full credit card numbers).</li>
+        <li>We only receive a cryptographic token confirming your active subscription status to unlock the premium features locally within the extension.</li>
+    </ul>
+    <p>We encourage you to review the privacy policy of our payment processor: <a href="https://stripe.com/privacy" target="_blank">Stripe Privacy Policy</a>.</p>
+
+    <h2>5. Transparent Permissions Explanation</h2>
+    <p>CepeshGochi requests only the permissions explicitly required for its core mechanics. Here is the technical justification for each:</p>
+    <ul>
+        <li><strong><code>storage</code>:</strong> Essential for saving your XP, achievements, custom timer settings, and custom character images locally on your hard drive.</li>
+        <li><strong><code>alarms</code>:</strong> Required to calculate your pet's happiness decay in the background efficiently, without keeping the extension constantly running and draining your laptop's battery.</li>
+        <li><strong><code>notifications</code>:</strong> Used strictly to provide critical alerts (e.g., reminding you to feed your pet when its HP is critically low) or occasional developer announcements.</li>
+        <li><strong><code>tabs</code>:</strong> Necessary to open essential extension pages (like the onboarding or payment success screens) and to manage cross-promotional links securely.</li>
+        <li><strong><code>sidePanel</code>:</strong> Enables the persistent docking of your virtual pet alongside your active browsing window, providing a stable user interface for securely uploading custom PNG characters.</li>
+        <li><strong>Host Permissions (<code>https://extensionpay.com/*</code>):</strong> Strictly required to communicate with our secure payment provider to verify Platinum subscriptions. We do not use this access to track your cross-site history.</li>
+    </ul>
+
+    <h2>6. Data Sharing & Third-Party Services</h2>
+    <p>We do not share, sell, rent, or transfer any of your local game data. The only exception is the non-sensitive subscription status check required for ExtensionPay to verify premium access (as described in Section 4). The extension contains zero third-party tracking or advertising SDKs.</p>
+    
+    <h2>7. Your Control Over Your Data</h2>
+    <p>You have absolute control over your environment. Uninstalling CepeshGochi from your browser will instantly and permanently wipe all its locally stored configurations, XP, achievements, and custom images from your device.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>If we introduce significant architectural changes that affect how local data is handled, we will update the "Last Updated" date at the top of this document and notify users via the extension's store listing.</p>
+
+    <h2>9. Contact Information</h2>
+    <p>For technical support or privacy-related inquiries, please contact the lead developer at: <a href="mailto:luciscepesh@gmail.com">luciscepesh@gmail.com</a>.</p>
+
+</body>
+</html>
