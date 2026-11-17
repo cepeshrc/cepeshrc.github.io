@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViamiRay — Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #fafaff;
+            --card-bg: #ffffff;
+            --text-main: #18062c;
+            --text-muted: #64537a;
+            --accent-pink: #d9006c;
+            --accent-cyan: #0d9488;
+            --border: #e5e0f0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 42px 22px;
+            line-height: 1.7;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-pink);
+            margin: 0 0 8px 0;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--text-main);
+            margin-top: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .highlight {
+            background-color: #f3e8ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #6b21a8;
+            font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+            font-size: 0.9em;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #d9006c, #0d9488);
+            color: #ffffff;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 14px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="badge">100% Local &amp; Privacy Focused</span>
+        <h1>ViamiRay — Privacy Policy</h1>
+        <p class="meta">Last updated: November 17, 2026 &middot; Developer: Vadym Trebushnyi (ViamiRay Studio)</p>
+    </header>
+
+    <main>
+        <p>
+            <strong>ViamiRay</strong> is a browser extension designed to transform modern websites with 1980s Miami Vice and Synthwave neon themes, animated 3D horizons, synthesized FM radio, and custom retro cursors.
+            Your privacy and data security are our highest priorities. This policy explains clearly and transparently how ViamiRay operates on your device.
+        </p>
+
+        <h2>Local-First &amp; Zero-Telemetry Architecture</h2>
+        <p>
+            ViamiRay is engineered on a <strong>Local-First Architecture</strong>. All visual assets (6 animated CSS themes, local fonts, 20 inline SVG cursors, SVG dashboard companions), screenshot framing tools, and audio engines (procedural Web Audio API synthesizers) are bundled directly inside the extension package.
+            <strong>ViamiRay never makes background network requests to download external scripts, stream third-party audio, or send analytics/telemetry data.</strong>
+        </p>
+
+        <h2>Data Stored Locally on Your Device</h2>
+        <p><strong>We do NOT collect, transmit, rent, or sell any personal or browsing data.</strong></p>
+        <p>ViamiRay operates locally inside your browser and uses Chrome's built-in <span class="highlight">chrome.storage</span> API solely to remember your personal settings:</p>
+        <ul>
+            <li>Your visual preferences (active Miami Vice theme, 4 screen zone toggles, VHS scanline/bloom slider value, and radio station selection).</li>
+            <li>Your per-domain pause whitelist (domain hostnames where you chose to pause neon styling, saved locally via <span class="highlight">chrome.storage.sync</span>).</li>
+            <li>Your VIP customization choices (selected custom cursor, dashboard companion, and custom top ticker text).</li>
+            <li>Local-only counters and timers (Ocean Drive mileage counter, daily free Testarossa Turbo Fuel session timestamps, and notification/flyer dismissal flags).</li>
+        </ul>
+
+        <h2>Polaroid Screenshot Tool (ViamiSnap '86)</h2>
+        <p>
+            When you explicitly click the <strong>ViamiSnap '86</strong> button in the ViamiRay popup, the extension captures the currently visible tab area and composites it inside a retro 1986 Polaroid frame using your browser's local HTML5 Canvas. The resulting PNG image is downloaded directly to your computer and is <strong>never uploaded or transmitted to any server</strong>.
+        </p>
+
+        <h2>Data We Do NOT Collect</h2>
+        <ul>
+            <li>Browsing history, search queries, or list of URLs visited.</li>
+            <li>Passwords, payment card numbers, form inputs, or personal communications.</li>
+            <li>Keystrokes or mouse tracking data (optional sound effects and cursor trails run purely locally in memory).</li>
+            <li>Third-party analytics, advertising identifiers, or behavioral telemetry.</li>
+        </ul>
+
+        <h2>Browser Permissions Explained</h2>
+        <p>ViamiRay requests only the minimum permissions required to deliver its visual and audio features:</p>
+        <ul>
+            <li><span class="highlight">storage</span> — Saves your theme preferences, domain pause whitelist, mileage counter, and daily free fuel timer locally in your browser.</li>
+            <li><span class="highlight">activeTab</span> &amp; <span class="highlight">&lt;all_urls&gt;</span> — Required to apply CSS neon themes, screen zones, and custom cursors onto webpages as they load, and to capture a Polaroid screenshot only when you click <em>ViamiSnap '86</em>. ViamiRay never reads, harvests, or transmits page content.</li>
+            <li><span class="highlight">alarms</span> — Manages local browser timers for the daily 10-minute free Turbo Fuel allowance and scheduled local reminders without background CPU drain.</li>
+            <li><span class="highlight">notifications</span> — Displays local desktop alerts when your daily fuel tank expires, when VIP access is unlocked, when hotkeys toggle the engine, or for occasional creator tool recommendations.</li>
+            <li><span class="highlight">sidePanel</span> — Allows you to dock the ViamiRay control deck inside Chrome's Side Panel if preferred over the toolbar popup.</li>
+        </ul>
+
+        <h2>Third-Party Services (Optional VIP Payments)</h2>
+        <p>
+            If you choose to unlock the optional <strong>VIP Turbo Pass</strong>, payment checkout and license status verification are handled securely by <strong>ExtensionPay</strong> (<span class="highlight">https://extensionpay.com</span>) powered by <strong>Stripe</strong>.
+        </p>
+        <p>
+            ViamiRay never sees, processes, or stores your credit card details or billing address. The extension only communicates with ExtensionPay to verify whether your browser holds an active paid VIP license token.
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>
+            ViamiRay is a general-audience browser customization tool, is not directed at children under the age of 13, and does not knowingly collect personal information from anyone.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+            If future updates introduce new capabilities that affect permissions or data handling, we will update this page and revise the "Last updated" date at the top of this document.
+        </p>
+
+        <h2>Contact Us</h2>
+        <p>
+            If you have any questions regarding this Privacy Policy or ViamiRay's privacy practices, please contact the developer at <span class="highlight">luciscepesh@gmail.com</span> or via the official Chrome Web Store support tab.
+        </p>
+    </main>
+
+    <footer>
+        &copy; 2026 Vadym Trebushnyi (CepeshRC / ViamiRay Studio). All Rights Reserved.
+    </footer>
+</body>
+</html>
